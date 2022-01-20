@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/shape_rect02"
+    android:padding="20dp">
+
+    <!--Button: goback, dismiss dialog-->
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:tint="@color/black"/>
+
+    <!--TextView: dialog title-->
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="5dp"
+        android:text="Penjelasan Aplikasi"
+        android:textAlignment="center"
+        android:textColor="@color/young_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTv"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:id="@+id/headlineComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="NotSibling,UnknownId"
+            android:text="@string/headlinePanduan"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_marginTop="20dp"/>
+
+
+            <TextView
+                android:id="@+id/kategoriTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="KATEGORI"
+                android:layout_below="@id/headlineComment"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/kategori1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="NotSibling,UnknownId"
+                android:text="@string/kategori1"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_below="@+id/kategoriTv"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/kategori2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="NotSibling,UnknownId"
+                android:text="@string/kategori2"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_below="@+id/kategori1"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/kategori3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="NotSibling,UnknownId"
+                android:text="@string/kategori3"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_below="@+id/kategori2"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/kategori4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="NotSibling,UnknownId"
+                android:text="@string/kategori4"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_below="@+id/kategori3"
+                android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

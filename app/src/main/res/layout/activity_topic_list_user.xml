@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopicListUserActivity"
+    android:background="@drawable/ground2">
+
+    <!--Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_toolbar02"
+        android:backgroundTint="@color/young_blue">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@android:color/transparent"/>
+
+        <!--title topic-->
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Topik"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"/>
+
+        <!--subtitle-->
+        <TextView
+            android:id="@+id/subTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:layout_below="@+id/titleTv"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topikTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TOPIK"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"/>
+
+    <!--Search-->
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:layout_below="@+id/topikTv"
+        android:padding="10dp"
+        android:hint="Cari Topik..."
+        android:textColorHint="@color/gray2"
+        android:drawableStart="@drawable/ic_baseline_search_yb"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/daftarTopikTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar Topik"
+        android:layout_below="@id/searchEt"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textStyle="bold"/>
+
+
+    <!--Topic List-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topicRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_topic_user"
+        android:layout_below="@+id/daftarTopikTv"/>
+
+</RelativeLayout>

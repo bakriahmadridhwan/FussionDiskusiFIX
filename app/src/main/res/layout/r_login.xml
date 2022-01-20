@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F5F5F5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Tambah Topik"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cvTopik"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_below="@id/tvTittle"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15dp"
+                app:neumorph_shapeType="pressed">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_bold"
+                        android:hint="Judul Topik"/>
+
+                    <EditText
+                        android:id="@+id/etTopik"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/poppins_light"
+                        android:gravity="top"
+                        android:hint="Tulis disini" />
+
+                </LinearLayout>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <TextView
+                android:id="@+id/tvKategori"
+                android:layout_below="@id/cvTopik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tambah Kategori"
+                android:layout_marginLeft="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="@color/black"/>
+
+            <soup.neumorphism.NeumorphCardView
+                android:id="@+id/cvKategori"
+                android:layout_below="@id/tvKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:neumorph_shapeType="pressed">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Contoh : Java"
+                    android:textSize="16sp"/>
+
+            </soup.neumorphism.NeumorphCardView>
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/btnPost"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_below="@+id/cvKategori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="Kirim"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

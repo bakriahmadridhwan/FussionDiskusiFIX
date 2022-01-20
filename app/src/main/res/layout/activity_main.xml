@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F5F5F5">
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/cvsearch_bar"
+        style="@style/Widget.Neumorph.CardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp">
+
+            <EditText
+                android:id="@+id/search_bar"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Cari Topik"
+                android:background="@android:color/transparent"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_search_24"/>
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_below="@id/cvsearch_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp">
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvJudulDiskusi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Judul Diskusi"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <soup.neumorphism.NeumorphImageView
+                android:id="@+id/ivVent"
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_baseline_more_vert_24" />
+
+            <soup.neumorphism.NeumorphTextView
+                android:id="@+id/tvDeskripsi"
+                android:layout_below="@+id/tvJudulDiskusi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_light"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."/>
+
+        </RelativeLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+</RelativeLayout>

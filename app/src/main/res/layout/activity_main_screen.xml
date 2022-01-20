@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreenActivity"
+    android:id="@+id/welcome"
+    android:background="@drawable/backg">
+
+    <TextView
+        android:id="@+id/ayoDiskusi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AYO DISKUSI"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/kataSambutan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deskripsi"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_below="@id/ayoDiskusi"/>
+
+    <ImageView
+        android:id="@+id/gambarDiskusi"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:src="@drawable/diskusi"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="50dp"/>
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/mulai"
+        android:textColor="@color/young_blue"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/button_style2"
+        android:layout_margin="25dp"/>
+
+
+</RelativeLayout>

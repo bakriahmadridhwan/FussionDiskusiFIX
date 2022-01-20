@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FussionV3</string>
+    <string name="pengguna_baru">Belum punya akun? </string>
+    <string name="deskripsi">Temukan solusi dan bahas bersama dari topik yang dibuat</string>
+    <string name="login">LOGIN</string>
+    <string name="daftar"><b>Daftar</b></string>
+    <string name="headlineComment">Apa yang bisa dilakukan ?</string>
+    <string name="info1"><b>1.</b> Melihat komentar dari anda sendiri dan komentar dari orang lain</string>
+    <string name="info2"><b>2.</b> Menambahkan komentar </string>
+    <string name="info3"><b>3.</b> Menghapus komentar yang dibuat oleh akun anda sendiri (klik pada komentar anda sendiri, maka akan muncul pilihan untuk menghapus) </string>
+    <string name="versi">Versi 1.00</string>
+    <string name="fussion">Fussion "Diskusi"</string>
+    <string name="tahun_app">© 2021 - 2022 Fussion Inc.</string>
+    <string name="geser">(geser untuk melihat menu lainnya)</string>
+    <string name="mulai">MULAI</string>
+
+    <string name="headlinePanduan">Berikut Penjelasannya</string>
+
+    <!--PENGGUNA-->
+    <string name="pengguna1">• Pengguna bisa melakukan daftar akun, masuk (login), dan mengakses konten yang ada di beranda</string>
+    <string name="pengguna2">• Semua pengguna bisa melihat konten yang dibuat oleh pengguna lain, <b>terkecuali</b> Catatan (bersifat pribadi)</string>
+    <string name="pengguna3">• Ketika pengguna sudah masuk (login), Pengguna memiliki akses : Tambah Kategori, Hapus Kategori, CRUD Topik, CRUD Catatan, dan Membuat Komentar pada Topik</string>
+    <string name="pengguna4">• Tersedia Fitur Keluar (logout) Akun</string>
+    <string name="pengguna5">• Pada saat Pengguna sedang dalam posisi masuk (login) kemudian aplikasi di bersihkan (kill), ketika aplikasi dibuka kembali, maka akan tetap posisi login dan akan langsung diarahkan ke Beranda</string>
+
+    <!--KATEGORI-->
+    <string name="kategori1">• Buat Kategori (tema yang akan dibahas)</string>
+    <string name="kategori2">• Masing - masing kategori memiliki daftar topik yang berbeda - beda</string>
+    <string name="kategori3">• Kategori memiliki 3 fitur, yaitu Tambah, Hapus, dan Pencarian Kategori</string>
+    <string name="kategori4">• Ketika diklik di salah satu kategori, maka akan menampilkan daftar topik yang dimasukkan ke dalam Kategori yang sedang diklik tersebut</string>
+
+    <!--TOPIK-->
+    <!--CATATAN-->
+    <!--INFO APLIKASI-->
+
+</resources>
